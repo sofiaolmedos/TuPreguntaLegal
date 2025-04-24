@@ -9,7 +9,7 @@ Pasos para correr el código:
 3. Levantar el servidor. ``rails server``
 4. Acceder a ``/abogados``
 
-Respecto a la features solicitadas. En la página inicial se encuentra el botón ``Nuevo abogado`` donde se accede a un formulario para crear un nuevo abogado. A
+Respecto a la features solicitadas. En la página inicial se encuentra el botón ``Nuevo abogado`` donde se accede a un formulario para crear un nuevo abogado. 
 
 
-Ahora que se despliega un abogado en la página inicial se puede acceder a `Editar` para cambiar los atributos de dicho abogado, y dentro del mismo formulario se puede `Eliminar`este.
+Ahora que se despliega un abogado en la página inicial se puede acceder a `Editar` para cambiar los atributos de dicho abogado, y dentro del mismo formulario se puede `Eliminar` este.
