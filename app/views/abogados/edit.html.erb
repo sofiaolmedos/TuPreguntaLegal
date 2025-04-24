@@ -1,0 +1,32 @@
+<h1>Editar abogado</h1>
+<%= form_with model: @abogado, local: true do |form| %>
+  <div class="form-box">
+    <%= form.label :name, 'Nombre:' %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="form-box">
+    <%= form.label :specialty, 'Especialidad:' %>
+    <%= form.text_field :specialty %>
+  </div>
+
+  <div class="form-box">
+    <%= form.label :email, 'Correo electrónico:' %>
+    <%= form.email_field :email %>
+  </div>
+
+  <div class="form-box">
+    <%= form.label :phone, 'Teléfono:' %>
+    <%= form.telephone_field :phone %>
+  </div>
+
+  <div>
+    <%= form.submit 'Actualizar Abogado', class: "button-filled" %>
+  </div>
+<% end %>
+
+<%= form_with url: abogado_path(@abogado), method: :delete, local: true do %>
+    <%= submit_tag 'Eliminar', data: { confirm: '¿Estás seguro?' }, class: "button-filled" %>
+<% end %>
+
+<%= link_to 'Volver', abogados_path, class: "button-lined" %>

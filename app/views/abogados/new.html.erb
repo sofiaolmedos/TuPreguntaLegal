@@ -1,0 +1,27 @@
+<h1>Nuevo Abogado</h1>
+<%= form_with model: @abogado do |form| %>
+  <div class="form-box">
+    <%= form.label :name, 'Nombre:' %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="form-box">
+    <%= form.label :specialty, 'Especialidad:' %>
+    <%= form.text_field :specialty %>
+  </div>
+
+  <div class="form-box">
+    <%= form.label :email, 'Correo electrónico:' %>
+    <%= form.email_field :email %>
+  </div>
+
+  <div class="form-box">
+    <%= form.label :phone, 'Teléfono:' %>
+    <%= form.telephone_field :phone %>
+  </div>
+
+  <div>
+    <%= form.submit 'Crear Abogado', class: "button-filled" %>
+  </div>
+<% end %>
+<%= link_to 'Volver', abogados_path, class: "button-lined" %>

@@ -1,0 +1,17 @@
+<h1>Lista de Abogados</h1>
+
+<div class="nuevo-abogado">
+<%= link_to 'Nuevo Abogado', new_abogado_path, class: "button-filled" %>
+</div>
+
+<% @abogados.each do |abogado| %>
+    <div class="container">
+      <p><%= abogado.name %></p>
+      <div class="caracts-container">
+        <p>Especialidad: <%= abogado.specialty %></p>
+        <p>Correo: <%= abogado.email %></p>
+        <p>Teléfono: <%= abogado.phone %></p>
+      </div>
+      <%= link_to 'Editar', edit_abogado_path(abogado), class: "button-lined" %> 
+    </div>
+<% end %>
